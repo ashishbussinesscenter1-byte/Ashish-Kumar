@@ -1,229 +1,267 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ashish Business Center | Kalyanpur Lucknow</title>
+<title>जन सेवा केंद्र | Ashish Business Center</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            scroll-behavior: smooth;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    scroll-behavior:smooth;
+}
 
-        body {
-            background: #f5f7fb;
-            color: #222;
-        }
+body{
+    background:#f5f7fb;
+    color:#222;
+}
 
-        header {
-            background: linear-gradient(135deg, #0d47a1, #1976d2);
-            color: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+header{
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+    color:white;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
-        }
+.logo span{
+    display:block;
+    font-size:16px;
+    margin-bottom:3px;
+}
 
-        nav a:hover {
-            color: #ffeb3b;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
 
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 30px 20px;
-            background: linear-gradient(rgba(13,71,161,.85), rgba(25,118,210,.85));
-            color: white;
-        }
+nav a:hover{
+    color:#ffeb3b;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px 20px;
+    background:linear-gradient(rgba(13,71,161,.85),rgba(25,118,210,.85));
+    color:white;
+}
 
-        .hero p {
-            font-size: 21px;
-            margin-bottom: 25px;
-            line-height: 1.6;
-        }
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 13px 24px;
-            margin: 7px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            background: white;
-            color: #0d47a1;
-        }
+.hero h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
 
-        .btn.whatsapp {
-            background: #25D366;
-            color: white;
-        }
+.hero p{
+    font-size:21px;
+    margin-bottom:25px;
+    line-height:1.6;
+}
 
-        section {
-            padding: 65px 7%;
-        }
+.btn{
+    display:inline-block;
+    padding:13px 24px;
+    margin:7px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    background:white;
+    color:#0d47a1;
+}
 
-        .title {
-            text-align: center;
-            font-size: 32px;
-            color: #0d47a1;
-            margin-bottom: 35px;
-        }
+.btn.whatsapp{
+    background:#25D366;
+    color:white;
+}
 
-        .about {
-            text-align: center;
-            max-width: 850px;
-            margin: auto;
-            line-height: 1.8;
-            font-size: 18px;
-        }
+section{
+    padding:65px 7%;
+}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+.title{
+    text-align:center;
+    font-size:32px;
+    color:#0d47a1;
+    margin-bottom:35px;
+}
 
-        .card {
-            background: white;
-            padding: 28px 22px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.08);
-            transition: .3s;
-        }
+.about{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
 
-        .card:hover {
-            transform: translateY(-7px);
-        }
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
 
-        .card .icon {
-            font-size: 42px;
-            margin-bottom: 12px;
-        }
+.card{
+    background:white;
+    padding:28px 22px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
 
-        .card h3 {
-            color: #0d47a1;
-            margin-bottom: 12px;
-            font-size: 21px;
-        }
+.card:hover{
+    transform:translateY(-7px);
+}
 
-        .card p {
-            color: #555;
-            line-height: 1.7;
-        }
+.card .icon{
+    font-size:42px;
+    margin-bottom:12px;
+}
 
-        .documents {
-            margin-top: 15px;
-            padding-left: 20px;
-            color: #444;
-            line-height: 1.8;
-        }
+.card h3{
+    color:#0d47a1;
+    margin-bottom:12px;
+    font-size:21px;
+}
 
-        .documents li {
-            margin-bottom: 3px;
-        }
+.card p{
+    color:#555;
+    line-height:1.7;
+}
 
-        .note {
-            margin-top: 15px;
-            padding: 10px;
-            background: #fff8e1;
-            border-left: 4px solid #ffb300;
-            font-size: 14px;
-            color: #555;
-        }
+.documents{
+    display:none;
+    margin-top:15px;
+    padding-left:20px;
+    color:#444;
+    line-height:1.8;
+}
 
-        .contact-box {
-            max-width: 750px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.08);
-            text-align: center;
-            line-height: 2;
-        }
+.documents.show{
+    display:block;
+}
 
-        .contact-box a {
-            color: #0d47a1;
-            font-weight: bold;
-            text-decoration: none;
-        }
+.documents li{
+    margin-bottom:3px;
+}
 
-        footer {
-            background: #0d47a1;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            line-height: 1.8;
-        }
+.note{
+    display:none;
+    margin-top:15px;
+    padding:10px;
+    background:#fff8e1;
+    border-left:4px solid #ffb300;
+    font-size:14px;
+    color:#555;
+}
 
-        @media(max-width: 700px) {
+.note.show{
+    display:block;
+}
 
-            header {
-                flex-direction: column;
-                gap: 12px;
-            }
+.click-text{
+    margin-top:15px;
+    color:#1976d2;
+    font-size:14px;
+    font-weight:bold;
+}
 
-            nav a {
-                margin: 0 5px;
-                font-size: 13px;
-            }
+.contact-box{
+    max-width:750px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    text-align:center;
+    line-height:2;
+}
 
-            .logo {
-                font-size: 21px;
-            }
+.contact-box a{
+    color:#0d47a1;
+    font-weight:bold;
+    text-decoration:none;
+}
 
-            .hero h1 {
-                font-size: 34px;
-            }
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px;
+    line-height:1.8;
+}
 
-            .hero p {
-                font-size: 18px;
-            }
+@media(max-width:700px){
 
-            section {
-                padding: 50px 5%;
-            }
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
 
-            .title {
-                font-size: 27px;
-            }
-        }
-    </style>
+    nav a{
+        margin:0 5px;
+        font-size:13px;
+    }
+
+    .logo{
+        font-size:21px;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero h2{
+        font-size:23px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    section{
+        padding:50px 5%;
+    }
+
+    .title{
+        font-size:27px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <!-- HEADER -->
 <header>
-    <div class="logo">Ashish Business Center</div>
+
+    <div class="logo">
+        <span>जन सेवा केंद्र</span>
+        Ashish Business Center
+    </div>
 
     <nav>
         <a href="#home">Home</a>
@@ -231,12 +269,17 @@
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
 
 <!-- HOME -->
 <section class="hero" id="home">
+
     <div>
+
+        <h2>जन सेवा केंद्र</h2>
+
         <h1>Ashish Business Center</h1>
 
         <p>
@@ -253,7 +296,9 @@
            target="_blank">
             💬 WhatsApp करें
         </a>
+
     </div>
+
 </section>
 
 
@@ -292,7 +337,7 @@
 
 
         <!-- AADHAAR -->
-        <div class="card">
+        <div class="card" onclick="toggleDocs('aadhar')">
 
             <div class="icon">🪪</div>
 
@@ -302,27 +347,38 @@
                 Aadhaar Card से संबंधित ऑनलाइन सेवाएँ।
             </p>
 
-            <ul class="documents">
+            <div class="click-text">
+                👆 Documents देखने के लिए क्लिक करें
+            </div>
+
+            <ul class="documents" id="aadhar">
+
                 <li>📱 Mobile Number Change</li>
                 <li>🏠 Address Change</li>
                 <li>📧 Email Update</li>
+
             </ul>
 
         </div>
 
 
         <!-- PAN -->
-        <div class="card">
+        <div class="card" onclick="toggleDocs('pan')">
 
             <div class="icon">💳</div>
 
             <h3>PAN Card</h3>
 
             <p>
-                नया PAN Card बनवाने के लिए आवश्यक दस्तावेज:
+                नया PAN Card बनवाने के लिए आवश्यक दस्तावेज।
             </p>
 
-            <ul class="documents">
+            <div class="click-text">
+                👆 Documents देखने के लिए क्लिक करें
+            </div>
+
+            <ul class="documents" id="pan">
+
                 <li>🪪 Aadhaar Card</li>
                 <li>📷 Photo</li>
                 <li>✍️ Signature</li>
@@ -331,40 +387,49 @@
                 <li>🚗 Driving Licence</li>
                 <li>🏥 ABHA Card</li>
                 <li>📋 e-Shram Card</li>
+
             </ul>
 
         </div>
 
 
         <!-- INCOME CASTE DOMICILE -->
-        <div class="card">
+        <div class="card" onclick="toggleDocs('jati')">
 
             <div class="icon">📄</div>
 
             <h3>आय • जाति • निवास</h3>
 
             <p>
-                आय, जाति एवं निवास प्रमाण पत्र बनवाने के लिए
-                आवश्यक दस्तावेज:
+                आय, जाति एवं निवास प्रमाण पत्र के लिए आवश्यक
+                दस्तावेज।
             </p>
 
-            <ul class="documents">
+            <div class="click-text">
+                👆 Documents देखने के लिए क्लिक करें
+            </div>
+
+            <ul class="documents" id="jati">
+
                 <li>🧾 पार्षद की स्लिप</li>
                 <li>🪪 Aadhaar Card</li>
                 <li>📷 Photo</li>
                 <li>📜 घर के किसी सदस्य का जाति प्रमाण पत्र</li>
+
             </ul>
 
-            <div class="note">
+            <div class="note" id="jatiNote">
+
                 दस्तावेजों की आवश्यकता प्रमाण पत्र एवं आवेदन
                 के अनुसार अलग-अलग हो सकती है।
+
             </div>
 
         </div>
 
 
         <!-- VOTER -->
-        <div class="card">
+        <div class="card" onclick="toggleDocs('voter')">
 
             <div class="icon">🗳️</div>
 
@@ -374,11 +439,24 @@
                 Voter ID से संबंधित ऑनलाइन आवेदन एवं सेवाएँ।
             </p>
 
+            <div class="click-text">
+                👆 Details देखने के लिए क्लिक करें
+            </div>
+
+            <div class="documents" id="voter">
+
+                <p>
+                    Voter ID के लिए ऑनलाइन आवेदन एवं
+                    संबंधित सेवाओं की सुविधा उपलब्ध है।
+                </p>
+
+            </div>
+
         </div>
 
 
         <!-- ONLINE FORMS -->
-        <div class="card">
+        <div class="card" onclick="toggleDocs('forms')">
 
             <div class="icon">📝</div>
 
@@ -389,11 +467,24 @@
                 भरने की सुविधा।
             </p>
 
+            <div class="click-text">
+                👆 Details देखने के लिए क्लिक करें
+            </div>
+
+            <div class="documents" id="forms">
+
+                <p>
+                    विभिन्न सरकारी एवं गैर-सरकारी
+                    Online Forms भरने में सहायता।
+                </p>
+
+            </div>
+
         </div>
 
 
         <!-- DIGITAL SERVICES -->
-        <div class="card">
+        <div class="card" onclick="toggleDocs('digital')">
 
             <div class="icon">💻</div>
 
@@ -404,8 +495,20 @@
                 सहायता उपलब्ध।
             </p>
 
-        </div>
+            <div class="click-text">
+                👆 Details देखने के लिए क्लिक करें
+            </div>
 
+            <div class="documents" id="digital">
+
+                <p>
+                    विभिन्न डिजिटल एवं ऑनलाइन सेवाओं के लिए
+                    सहायता उपलब्ध है।
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -467,7 +570,7 @@
     </p>
 
     <p>
-        Kalyanpur, Lucknow
+        जन सेवा केंद्र | Kalyanpur, Lucknow
     </p>
 
     <p>
@@ -475,6 +578,28 @@
     </p>
 
 </footer>
+
+
+<!-- JAVASCRIPT -->
+<script>
+
+function toggleDocs(id){
+
+    const docs = document.getElementById(id);
+
+    docs.classList.toggle("show");
+
+    if(id === "jati"){
+
+        const note = document.getElementById("jatiNote");
+
+        note.classList.toggle("show");
+
+    }
+
+}
+
+</script>
 
 </body>
 </html>
