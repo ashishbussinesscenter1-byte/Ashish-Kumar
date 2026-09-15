@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ashish Business Center | Kalyanpur Lucknow</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(rgba(13,71,161,.85), rgba(25,118,210,.85));
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 24px;
+            margin: 7px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            background: white;
+            color: #0d47a1;
+        }
+
+        .btn.whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        section {
+            padding: 65px 7%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            color: #0d47a1;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px 22px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card .icon {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #0d47a1;
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .documents {
+            margin-top: 15px;
+            padding-left: 20px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .documents li {
+            margin-bottom: 3px;
+        }
+
+        .note {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff8e1;
+            border-left: 4px solid #ffb300;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact-box {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contact-box a {
+            color: #0d47a1;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+        @media(max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 13px;
+            }
+
+            .logo {
+                font-size: 21px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+
+            .title {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">Ashish Business Center</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div>
+        <h1>Ashish Business Center</h1>
+
+        <p>
+            आपके सभी Online एवं सरकारी काम<br>
+            एक ही जगह
+        </p>
+
+        <a class="btn" href="#services">
+            हमारी Services
+        </a>
+
+        <a class="btn whatsapp"
+           href="https://wa.me/918881770661"
+           target="_blank">
+            💬 WhatsApp करें
+        </a>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="title">हमारे बारे में</h2>
+
+    <div class="about">
+
+        <p>
+            <b>Ashish Business Center</b> में आपको विभिन्न
+            सरकारी एवं ऑनलाइन सेवाओं के लिए सहायता एक ही स्थान पर
+            मिलती है।
+        </p>
+
+        <br>
+
+        <p>
+            Aadhaar Card, PAN Card, Voter ID, आय प्रमाण पत्र,
+            जाति प्रमाण पत्र, निवास प्रमाण पत्र तथा सभी प्रकार के
+            Online Forms के लिए हम आपकी सहायता करते हैं।
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+
+    <h2 class="title">हमारी सेवाएँ</h2>
+
+    <div class="services">
+
+
+        <!-- AADHAAR -->
+        <div class="card">
+
+            <div class="icon">🪪</div>
+
+            <h3>Aadhaar Card Services</h3>
+
+            <p>
+                Aadhaar Card से संबंधित ऑनलाइन सेवाएँ।
+            </p>
+
+            <ul class="documents">
+                <li>📱 Mobile Number Change</li>
+                <li>🏠 Address Change</li>
+                <li>📧 Email Update</li>
+            </ul>
+
+        </div>
+
+
+        <!-- PAN -->
+        <div class="card">
+
+            <div class="icon">💳</div>
+
+            <h3>PAN Card</h3>
+
+            <p>
+                नया PAN Card बनवाने के लिए आवश्यक दस्तावेज:
+            </p>
+
+            <ul class="documents">
+                <li>🪪 Aadhaar Card</li>
+                <li>📷 Photo</li>
+                <li>✍️ Signature</li>
+                <li>📄 High School Marksheet</li>
+                <li>🗳️ Voter ID Card</li>
+                <li>🚗 Driving Licence</li>
+                <li>🏥 ABHA Card</li>
+                <li>📋 e-Shram Card</li>
+            </ul>
+
+        </div>
+
+
+        <!-- INCOME CASTE DOMICILE -->
+        <div class="card">
+
+            <div class="icon">📄</div>
+
+            <h3>आय • जाति • निवास</h3>
+
+            <p>
+                आय, जाति एवं निवास प्रमाण पत्र बनवाने के लिए
+                आवश्यक दस्तावेज:
+            </p>
+
+            <ul class="documents">
+                <li>🧾 पार्षद की स्लिप</li>
+                <li>🪪 Aadhaar Card</li>
+                <li>📷 Photo</li>
+                <li>📜 घर के किसी सदस्य का जाति प्रमाण पत्र</li>
+            </ul>
+
+            <div class="note">
+                दस्तावेजों की आवश्यकता प्रमाण पत्र एवं आवेदन
+                के अनुसार अलग-अलग हो सकती है।
+            </div>
+
+        </div>
+
+
+        <!-- VOTER -->
+        <div class="card">
+
+            <div class="icon">🗳️</div>
+
+            <h3>Voter ID</h3>
+
+            <p>
+                Voter ID से संबंधित ऑनलाइन आवेदन एवं सेवाएँ।
+            </p>
+
+        </div>
+
+
+        <!-- ONLINE FORMS -->
+        <div class="card">
+
+            <div class="icon">📝</div>
+
+            <h3>सभी Online Forms</h3>
+
+            <p>
+                विभिन्न सरकारी एवं गैर-सरकारी Online Forms
+                भरने की सुविधा।
+            </p>
+
+        </div>
+
+
+        <!-- DIGITAL SERVICES -->
+        <div class="card">
+
+            <div class="icon">💻</div>
+
+            <h3>Online Services</h3>
+
+            <p>
+                विभिन्न डिजिटल एवं ऑनलाइन सेवाओं के लिए
+                सहायता उपलब्ध।
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact-box">
+
+        <h2>Ashish Business Center</h2>
+
+        <p>
+            📍 <b>Address:</b><br>
+
+            Front of Varmora Tiles,<br>
+            Maikale Tempo Stand,<br>
+            Kanchana Bihari Marg,<br>
+            Kalyanpur, Lucknow
+        </p>
+
+        <br>
+
+        <p>
+            📞
+            <a href="tel:8881770661">
+                8881770661
+            </a>
+        </p>
+
+        <p>
+            📞
+            <a href="tel:9889639045">
+                9889639045
+            </a>
+        </p>
+
+        <br>
+
+        <a class="btn whatsapp"
+           href="https://wa.me/918881770661"
+           target="_blank">
+            💬 WhatsApp पर संपर्क करें
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 Ashish Business Center
+    </p>
+
+    <p>
+        Kalyanpur, Lucknow
+    </p>
+
+    <p>
+        All Rights Reserved
+    </p>
+
+</footer>
+
+</body>
+</html>
